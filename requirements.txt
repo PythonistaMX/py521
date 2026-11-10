@@ -1,0 +1,10 @@
+# Entorno de las demos py521 "IA Generativa en Entornos Locales" (Python 3.10+)
+# El motor de modelos (Ollama u otro) se instala aparte, en el equipo.
+openai>=3.48
+httpx>=0.28
+numpy>=2.1
+matplotlib>=3.9
+python-dotenv>=1.2
+# Jupyter
+jupyterlab>=4.2.5
+ipykernel>=6.29.5
