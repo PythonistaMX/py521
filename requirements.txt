@@ -1,10 +1,16 @@
 # Entorno de las demos py521 "IA Generativa en Entornos Locales" (Python 3.10+)
 # El motor de modelos (Ollama u otro) se instala aparte, en el equipo.
-openai>=3.48
-httpx>=0.28
-numpy>=2.1
-matplotlib>=3.9
-python-dotenv>=1.2
+# Versiones fijadas el 2026-11-10: no actualizar durante una edición del curso.
+# NumPy, Matplotlib e ipykernel ya no publican versiones para Python 3.10;
+# en ese caso se instala la última compatible.
+openai==3.49.0
+httpx==0.28.1
+numpy==2.5.4; python_version >= "3.11"
+numpy==2.2.6; python_version < "3.11"
+matplotlib==3.11.2; python_version >= "3.11"
+matplotlib==3.10.9; python_version < "3.11"
+python-dotenv==1.2.4
 # Jupyter
-jupyterlab>=4.2.5
-ipykernel>=6.29.5
+jupyterlab==4.6.6
+ipykernel==7.4.0; python_version >= "3.11"
+ipykernel==7.3.0; python_version < "3.11"
